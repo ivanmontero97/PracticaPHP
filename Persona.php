@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<div>
     <?php
     $nom= 'Kurt';
     $cognom= "Cagle";
@@ -37,5 +38,41 @@
         <li> Treballa : <?php echo $trabaja ? 'si' : 'no' ;?></li>
         <li> I medeix : <?php echo $altura ?>   </li>
     </ul>
+</div>
+<div>
+    <?php 
+        define("IVA",0.21); //Declaracion de la constante IVA
+
+        $llistaCursos = array(                          //Definimos un array de dos dimensiones 
+            array(1,"PHP","Introducció a PHP",15.5),
+            array(2,"Laravel","Laravel per experts",30),
+            array(3,"Django","Dominant Django",10)
+        );
+
+     /*   foreach($llistaCursos as $curso){
+            echo $curso[0];
+            echo "<br />";
+            echo $curso[1];
+            echo "<br />";
+            echo $curso[2];
+            echo "<br />";
+        };*/
+        for($i =0; $i< 3 ;$i++ )
+        {
+          
+            echo $llistaCursos[$i][1] . " ";
+            echo $llistaCursos[$i][2] . " ";
+            echo $llistaCursos[$i][3] + $llistaCursos[$i][3]*0.21 . " ";
+            // for($b = 1 ; $b < 4;$b++ )
+            // {
+            //     echo $llistaCursos[$i][$b] . " ";
+            
+            // }
+            echo "<br />";
+        }
+            
+        
+        ?>
+</div>
 </body>
 </html>

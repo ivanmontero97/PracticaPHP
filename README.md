@@ -1,5 +1,5 @@
-# PERSONA EN PHHP Y HTML
 ## **1.**  Crear un arxiu que contingui HTML i PHP per donar la informació d’una persona la qual haurà de tindre els següents atributs:
+# PERSONA EN PHHP Y HTML
 
 - nom persona : Kurt
 - cognoms persona: Cagle
